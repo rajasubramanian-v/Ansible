@@ -6,3 +6,7 @@
     - name: Print Hello World message
       ansible.builtin.debug:
         msg: "Hello, World!"
+    - name: Install Apache
+      apt:
+        name: apache2
+        state: present
